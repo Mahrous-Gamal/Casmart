@@ -28,9 +28,9 @@ body {
 /* CSS Variables */
 :root {
 
-  /* --main-color: hsl(148, 45%, 58%); */
   /* --second-color: hsl(176, 35%, 63%);  */
   --main-color: hsl(176, 35%, 63%);
+  --second-color: hsl(148, 45%, 58%);
 
 
   --transition-1: 0.25s ease;
@@ -199,33 +199,93 @@ a {
   color: white;
 }
 
-.story {
-  /* height: 50vh; */
-  /* border: 2px solid green; */
-  margin-top: 100px;
-}
-
-.about {
-  margin-top: 70px;
-  /* height: 80vh; */
-  /* border: 2px solid red; */
+.contact {
+  margin-top: 80px;
+  /* height: 70vh; */
+  border: 2px solid red;
   padding-bottom: 50px;
 }
 
-.about .card {
+.call-to-us {
+  /* height: 457px; */
+  top: 323px;
+  left: 135px;
+  padding: 40px 35px 51px 35px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: white;
+}
+
+.contact .call {
+  /* bord er: 2px solid green; */
+}
+
+.contact .call p {
+  color: gray;
+  /* bord er: 2px solid green; */
+}
+
+.contact .call .icon {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.form-contact {
+  /* width: 800px;
+  height: 457px; */
+  /* top: 323px;
+  left: 505px; */
+  padding: 40px 32px 40px 31px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: white;
+  /* padding-bottom: 50px; */
+}
+
+.form-control {
+  background: #F5F5F5 !important;
+  /* padding: 8px 20px; */
+
+}
+.bb{
+  width:fit-content ;
+  margin-left: auto;
+}
+.contact .btn-send {
+  /*width: 215px;
+  height: 56px;
+  */border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: var(--main-color);
+  font-weight: 500;
+  border: 0;
+  outline: none;
+  padding: 10px 30px;
+  color: white;
   transition: all .3s ease;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
+  cursor: pointer;
 }
-.about .card img{
-height: 330px;
-}
-.about .card:hover {
-  transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
+.contact .btn-send:hover {
+background-color: var(--second-color);
 }
