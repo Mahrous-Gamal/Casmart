@@ -198,9 +198,32 @@ a {
   border-color: var(--main-color) !important;
   color: white;
 }
-.about{
+
+.story {
+  /* height: 50vh; */
+  /* border: 2px solid green; */
+  margin-top: 100px;
+}
+
+.about {
   margin-top: 70px;
   /* height: 80vh; */
   /* border: 2px solid red; */
   padding-bottom: 50px;
+}
+
+.about .card {
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+
+.about .card:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }

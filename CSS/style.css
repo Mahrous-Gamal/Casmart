@@ -250,9 +250,13 @@ main .txt-main b {
 }
 
 .services .service {
-  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
 }
-
+.txt-services {
+  padding:0;
+  height:60px!important; 
+}
 .new-collection {
   padding-bottom: 50px;
 }
@@ -260,11 +264,12 @@ main .txt-main b {
 .new-collection .collection {
   list-style: none;
   display: flex;
-  width: 40%;
+  width: 38%;
   justify-content: space-between;
   margin: auto;
   margin-top: 30px;
   font-size: 17px;
+  padding-left: 0;
 }
 
 .new-collection .collection li {
@@ -297,8 +302,7 @@ main .txt-main b {
 
 @media only screen and (min-width: 300px) and (max-width: 800px) {
   .new-collection .collection {
-
-    width: 90%;
+    width: 80%;
 
   }
 
@@ -308,10 +312,20 @@ main .txt-main b {
     font-size: 15px;
   }
 }
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .new-collection .collection {
+    width: 55%;
 
-@media only screen and (min-width: 801px) and (max-width: 1180px) {
-  .new-collection ul {
+  }
 
+  .new-collection .collection li {
+    border: 1px solid black;
+    padding: 2px 5px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1180px) {
+  .new-collection .collection  ul {
     width: 60%;
 
   }
